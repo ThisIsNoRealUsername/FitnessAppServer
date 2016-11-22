@@ -1,9 +1,9 @@
 Insert into Cardio_bsd (id, activitypoints, id_user, un_user, email_user) values (...);
 Insert into run_bsd (id, hoehenmeter, kilometer, zeit) values (...): = swim, cycle     id muss gleiche sein wie bei cardio_bsd
 
-Select c.id_user, c.un_user, c.email_user, c.activitypoints, r.id, r.hoehenmeter, r.kilometer, to_char(r.zeit, 'hh24:mi:ss') from run_bsd r join cardio_bsd c on r.id = c.id; = swim, cycle
+Select c.id_user, c.un_user, c.email_user, c.activitypoints, r.id, r.hoehenmeter, r.kilometer, to_char(r.zeit, 'hh24:mi:ss'), to_char(c.c_date, 'dd.mm.yyyy') from run_bsd r join cardio_bsd c on r.id = c.id; = swim, cycle
 
 Insert into Power_bsd (id, activitypoints, id_user, un_user, email_user) values (...);
 Insert into benchpress_bsd(id, gewichte, wiederholungen) values(...); = squat, deadlift   id muss gleiche sein wie bei power_bsd
 
-Select p.id_user, p.un_user, p.email_user, p.activitypoints, b.id, b.gewichte, b.wiederholungen from benchpress_bsd b join power_bsd p on b.id = p.id;  = squat, deadlift
+Select p.id_user, p.un_user, p.email_user, p.activitypoints, b.id, b.gewichte, b.wiederholungen, to_char(p.c_date, 'dd.mm.yyyy') from benchpress_bsd b join power_bsd p on b.id = p.id;  = squat, deadlift
