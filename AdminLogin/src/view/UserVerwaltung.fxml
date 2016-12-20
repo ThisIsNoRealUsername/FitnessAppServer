@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="311.0" prefWidth="854.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserVerwaltungController">
+	<children>
+		<TableView fx:id="tbl" editable="true" layoutX="14.0" layoutY="14.0" prefHeight="249.0" prefWidth="829.0">
+			<columns>
+				<TableColumn fx:id="usernameCol" prefWidth="87.0" text="Username" />
+				<TableColumn fx:id="passwordCol" prefWidth="83.0" text="Password" />
+				<TableColumn fx:id="firstNameCol" prefWidth="88.0" text="First Name" />
+				<TableColumn fx:id="lastNameCol" prefWidth="86.0" text="Last Name" />
+				<TableColumn fx:id="emailCol" prefWidth="51.0" text="Email" />
+				<TableColumn fx:id="birthDateCol" prefWidth="93.0" text="Birth Date" />
+				<TableColumn fx:id="bodyHeightCol" prefWidth="101.0" text="Body Height" />
+				<TableColumn fx:id="bodyWeightCol" prefWidth="107.0" text="Body Weight" />
+				<TableColumn fx:id="activityPointsCol" prefWidth="120.0" text="Activity Points" />
+			</columns>
+		</TableView>
+		<Button fx:id="btnDelete" layoutX="679.0" layoutY="270.0" mnemonicParsing="false" onAction="#clickBtnDelete" text="Delete User" />
+		<Button fx:id="btnAdd" layoutX="582.0" layoutY="270.0" mnemonicParsing="false" onAction="#clickBtnAdd" text="Add User" />
+		<Button fx:id="btnRead" layoutX="14.0" layoutY="270.0" mnemonicParsing="false" onAction="#clickBtnRead" text="Refresh Data" />
+	</children>
+</AnchorPane>

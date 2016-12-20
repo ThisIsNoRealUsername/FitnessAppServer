@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="431.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddFormController">
+   <children>
+      <Label fx:id="lblUsername" layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="82.0" text="Username" />
+      <TextField fx:id="tfUsername" layoutX="149.0" layoutY="17.0" prefHeight="23.0" prefWidth="196.0" />
+      <Label fx:id="lblFirstname" layoutX="14.0" layoutY="51.0" prefHeight="30.0" prefWidth="82.0" text="First name" />
+      <TextField fx:id="tfFirstname" layoutX="149.0" layoutY="54.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label fx:id="lblLastname" layoutX="14.0" layoutY="93.0" prefHeight="30.0" prefWidth="76.0" text="Last name" />
+      <TextField fx:id="tfLastname" layoutX="149.0" layoutY="93.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label fx:id="lblPassword" layoutX="14.0" layoutY="132.0" prefHeight="30.0" prefWidth="76.0" text="Password" />
+      <TextField fx:id="tfPassword" layoutX="149.0" layoutY="135.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label fx:id="lblEmail" layoutX="14.0" layoutY="175.0" prefHeight="30.0" prefWidth="76.0" text="Email" />
+      <TextField fx:id="tfEmail" layoutX="149.0" layoutY="178.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label fx:id="lblBodyWeight" layoutX="14.0" layoutY="219.0" prefHeight="30.0" prefWidth="97.0" text="Body weight" />
+      <TextField fx:id="tfBodyWeight" layoutX="149.0" layoutY="222.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label fx:id="lblBodyHeight" layoutX="14.0" layoutY="256.0" prefHeight="30.0" prefWidth="82.0" text="Body height" />
+      <TextField fx:id="tfBodyHeight" layoutX="149.0" layoutY="259.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label fx:id="lblActivityPoints" layoutX="14.0" layoutY="294.0" prefHeight="30.0" prefWidth="106.0" text="Activity points" />
+      <TextField fx:id="tfActivityPoints" layoutX="149.0" layoutY="297.0" prefHeight="25.0" prefWidth="196.0" />
+      <Label fx:id="lblBirthdate" layoutX="14.0" layoutY="333.0" prefHeight="30.0" prefWidth="97.0" text="Birth date" />
+      <TextField fx:id="tfBirthdate" layoutX="149.0" layoutY="336.0" prefHeight="25.0" prefWidth="196.0" />
+      <Button fx:id="btnAdd" layoutX="15.0" layoutY="378.0" mnemonicParsing="false" onAction="#clickBtnAdd" prefHeight="30.0" prefWidth="90.0" text="Add User" />
+   </children>
+</AnchorPane>
