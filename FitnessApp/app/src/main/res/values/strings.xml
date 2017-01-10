@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">FIT-HUB</string>
+    <string name="activity_training_name">Select Training</string>
+    <string name="activity_power_name">Power</string>
+
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="login">Login</string>
+    <string name="training">Training:</string>
+    <string name="workout">Workout:</string>
+    <string name="start">Start</string>
+    <string name="weights">Weights:</string>
+    <string name="repeats">Repeats:</string>
+    <string name="kg">kg</string>
+    <string name="confirm">Confirm</string>
+
+    <string-array name="training_array">
+        <item>Power</item>
+        <item>Cardio</item>
+    </string-array>
+    <string-array name="cardio_array">
+        <item>Cycle</item>
+        <item>Run</item>
+        <item>Swim</item>
+    </string-array>
+    <string-array name="power_array">
+        <item>Benchpress</item>
+        <item>Deadlift</item>
+        <item>Squat</item>
+    </string-array>
+</resources>
