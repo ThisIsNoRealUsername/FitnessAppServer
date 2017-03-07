@@ -1,0 +1,18 @@
+sind noch nicht am produktivserver
+
+GET
+192.168.142.235:8080/fithubservices/rest/service/users
+192.168.142.235:8080/fithubservices/rest/service/getBenchpress
+192.168.142.235:8080/fithubservices/rest/service/getDeadlift
+192.168.142.235:8080/fithubservices/rest/service/getSquat
+192.168.142.235:8080/fithubservices/rest/service/getRun
+192.168.142.235:8080/fithubservices/rest/service/getCycle
+192.168.142.235:8080/fithubservices/rest/service/getSwim
+
+PUT
+192.168.142.235:8080/fithubservices/rest/service/benchpress
+192.168.142.235:8080/fithubservices/rest/service/deadlift
+192.168.142.235:8080/fithubservices/rest/service/squat
+192.168.142.235:8080/fithubservices/rest/service/run
+192.168.142.235:8080/fithubservices/rest/service/cycle
+192.168.142.235:8080/fithubservices/rest/service/swim
