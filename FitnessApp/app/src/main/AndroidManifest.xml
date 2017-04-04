@@ -2,12 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="bsd.com.fitnessapp">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        AIzaSyBjr2_v7TNIW1dvEYP749oFl-uxyapjwaA
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
@@ -18,10 +28,12 @@
             </intent-filter>
         </activity>
         <activity
-           android:name=".TrainingActivity"
+            android:name=".TrainingActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".PowerActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".CardioActivity"
             android:screenOrientation="portrait" />
     </application>
 

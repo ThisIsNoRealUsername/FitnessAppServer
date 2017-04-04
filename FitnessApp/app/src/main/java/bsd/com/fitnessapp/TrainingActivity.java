@@ -16,7 +16,7 @@ public class TrainingActivity extends AppCompatActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // used to align the text of the action bar to center
-        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setDisplayOptions(android.support.v7.app.ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setCustomView(R.layout.actionbar_training_activity);
 
         super.onCreate(savedInstanceState);
@@ -35,11 +35,16 @@ public class TrainingActivity extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View view) {
+        Intent intent;
+        Spinner spinner = (Spinner) findViewById(R.id.spinnerWorkout);
+
         if (selectedItem.equals("Power")) {
-            Intent intent = new Intent(this, PowerActivity.class);
+            intent = new Intent(this, PowerActivity.class);
+            intent.putExtra("workout", spinner.getSelectedItem().toString());
             startActivity(intent);
         } else if (selectedItem.equals("Cardio")) {
-
+            intent = new Intent(this, CardioActivity.class);
+            startActivity(intent);
         }
     }
 

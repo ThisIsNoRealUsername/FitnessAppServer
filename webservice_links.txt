@@ -1,4 +1,5 @@
 sind noch nicht am produktivserver
+scp fithubservices.war pupil@192.168.142.235:/opt/tomcat/webapps
 
 GET
 192.168.142.235:8080/fithubservices/rest/service/users
